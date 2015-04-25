@@ -1,0 +1,25 @@
+
+Code Book describing variables used in the R code.
+
+feature - Storesre features.txt data for column variable names for test and training data.
+sub_test - Stores data extracted from subject_test.txt.
+x_test - Stores data extracted from X_test.txt.
+y_test - Stores data extracted from y_test.txt.
+
+test - Data frame created by combining columns of sub_test, y_test, x_test using cbind().
+
+sub_train - Stores data extracted from subject_train.txt.
+x_train - Stores data extracted from X_train.txt.
+y_train - Stores data extracted from y_train.txt.
+
+train - Data frame created by combining columns of sub_train, y_train, x_train using cbind().
+
+har.data - Final Data set created by combining rows of train, test using rbind().
+
+valid_col_names - Contains converted variable names of har.data using make.names() to remove parenthesis.
+
+har.sub - a subset of har.data with Subject, Activity and all columns having experessions ".mean." and ".std.". And merged data of har.sub and activity data frames by Activity column of har.sub and V1 columns of activity representing activity code.
+
+activity - Stored activity data from activity_labels.txt
+
+har.sub.tidy - The required independent tidy data set with the average of each variable for each activity and each subject.
