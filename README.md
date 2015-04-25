@@ -17,7 +17,7 @@ The repository contains R code and detailed information on variables and how the
 
 8. A sub data set of har.data is created by extracting Subject, Activity and all the columns having ".mean." and ".std.". Please note that there are several other columns containing the words "mean" and "std" which will not get included in the sub data frame. It has been left to the interpretation of the student only selecting columns representing mean and standard deviation.
 
-9 activity data frame will store data from activity_label.txt.
+9. activity data frame will store data from activity_label.txt.
 
 10. har.sub and activity data frames are merged together by Activity column of har.sub and V1 columns of activity representing activity code. V2 column of activity data frame will joined with har.sub represeting activity lables. V2 column is renamed to "Activity.Type"
 
